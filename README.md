@@ -1,7 +1,7 @@
 **PHP avancé – Devoir n°1 Devoire image**
 *****************************
 Barème de notation : 20 points.
-Temps estimatif : 3 heures.  
+<br/>Temps estimatif : 3 heures.  
 Critère d’évaluation : savoir créer un script de rangement d’images (en vrac).      
 *****************************
 Un stock d’images est disponible en vrac dans un répertoire. Ces images sont nommées comme suit : nom_de_
