@@ -30,7 +30,7 @@ __MVC__
 
 __Model Vue Controller__
 
-__Le Model__ Gére les échanges avec la BDD: **_Dans notre cas le modele gére_** les echanges avec  docier image_Vrac.  
+__Le Model__ Gére les échanges avec la BDD: *_Dans notre cas le modele gére_* les echanges avec  docier image_Vrac.  
 __Le controller__ Il traite les informations --> puis envoie les doner traite a la Vue.   
 
 
