@@ -4,11 +4,11 @@ Barème de notation : 20 points.
 <br/>Temps estimatif : 3 heures.  
 Critère d’évaluation : savoir créer un script de rangement d’images (en vrac).      
 *****************************
-Rangement d’images
+__Rangement d’images__
 <br/>Pour nous faire parvenir votre devoir
 <br/>Joignez le dossier zippé (ou compressé) contenant tous les fichiers de votre devoir : pages HTML, fichiers CSS
 ou. JS, PHP en prenant garde à conserver l’arborescence.
-<br/>Le point d’entrée du site doit être le fichier « index.php« , il est donc important que la première page à exécuter 
+<br/>Le point d’entrée du site doit être le fichier « index.php« , il est donc important que la première page à exécuter
 soit cette page pour que le correcteur comprenne votre code.
 *****************************
 Un stock d’images est disponible en vrac dans un répertoire. Ces images sont nommées comme suit : nom_de_
