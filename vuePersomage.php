@@ -1,5 +1,13 @@
 <?php
+require "head.html";
+require "menu.html";
 require 'Personage.php';
+ ?>
+
+<h2>compreantion des class et metode  </h2>
+
+<?php
+
 
 $merlin = new Personage("Merlin");
 
