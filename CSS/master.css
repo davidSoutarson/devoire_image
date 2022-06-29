@@ -5,3 +5,10 @@ h2{
 h3{
   color: green;
 }
+
+.champForm{
+  width: 450px;
+  border: solid 2px white ;
+  padding: 10px;
+  background : rgba(60, 60, 60, 0.2);
+}
