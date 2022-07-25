@@ -5,47 +5,58 @@ require "Images.php";
 
 echo "<h2>vue trie image.php </h2>";
 
-  $image_varc = new Images();
+$image_obj = new Images();
 
-  $flis_name = $image_varc->contenue();
+//  var_dump($contenueImage_varc);
 
-echo "<p> ------------- test mes besoin ------------- </p> ";
+  $enciens_noms = $image_obj->nomFichier();
 
-  $test7 = "ChAt01.jpg";
-  $minuscule2 = strtolower($test7);
-  $qoi = explode(".",$minuscule2,2);
-  var_dump($qoi);
+  $nouveuxNoms = $image_obj->changeNom();
 
-  echo $qoi[0]."-2022-001"."." .$qoi[1]."<br/>";
-
-  echo "<br>".$qoi[0]."</br>";
+echo "<h3> ACTION: afiche les noms origineaux des fichier du dosier image_Vrac exitent</h3>";
 
 
-echo "<hr> <hr> ";
+  foreach ($enciens_noms as $key => $encien_nom) {
+
+    echo "<li>" .$encien_nom. "</li>";
+
+  }
+
+
+echo "<h3> ACTION:Si il exite afiche les nouveux nom des fichier du dosier image_Vrac,
+les non on etait sendardiser pour déplasement dans le docier aproprier</h3>";
+
+
+  foreach ($nouveuxNoms as $key => $nouveuNom)
+  {
+    echo "<li>" .$nouveuNom. "</li>";
+  }
+
+
+
+
+if (isset($_POST["deplacer"])) {
+
+  $deplaser = $_POST["deplacer"];
+
+  $image_obj2 = new Images();
+
+  $renome_deplace = $image_obj2->deplacerRenomer();
+
+  //$mesage ="Le fichier bien a etait deplaser";
+}
+
 
 ?>
 
-<div class="">
-  <h3> ACTION: afiche le nom des images du dosier image_Vrac </h3>
 
-  <?php
-  foreach ($flis_name as $key => $value) {
+<form class="" action="" method="post">
 
-      echo "<li>" .$value. "</li>";
-  }
- ?>
+  <p> <input type="submit" name="deplacer" value="deplacer">
+    <?php if (isset($mesage))
+    {
+      echo $mesage;
+    } ?>
+  </p>
 
-</div>
-
-<div class="">
-
- <h3> ACTION: afiche les images  du dosier image_Vrac </h3>
-
-   <?php
-   foreach ($flis_name as $key => $value) {
-
-       echo " <img src='image_Vrac/$value' alt='images en vrac'> $value";
-   }
-  ?>
-
-</div>
+</form>
