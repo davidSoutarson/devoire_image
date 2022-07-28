@@ -24,17 +24,7 @@ Par exemple, les images vrac/montagne_2009-001.jpg et vrac/montagne_2009-002.jpg
 <ul>
   <li><h4>Je Doit </h4></li>
   <li> créer un script de rangement d’images </li>
-  <li><h4>Je cherche </h4></li>
-  <li>coment trier des fichier ? </li>
-
-    <p>par nom:  je dipose des fontion rename et explode </p>
-
-  <li>coment creer un repertoir en php ?</li>
-  <li> renomer des fichier selon un santdart </li>
-  <li><h4>je Peux </h4> </li>
-  <li> déplacer des fichier dans un repertoir </li>
-  <li> telechacher des fichier et ranger de fichier dans un repertoir exitent</li>
-
+  
 
 
 

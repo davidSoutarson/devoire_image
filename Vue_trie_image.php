@@ -2,6 +2,8 @@
 require "head.html";
 require "menu.html";
 require "Images.php";
+require "vue_formulaire.php";
+require "Telechager.php";
 
 echo "<h2>vue trie image.php </h2>";
 
@@ -13,8 +15,7 @@ $image_obj = new Images();
 
   $nouveuxNoms = $image_obj->changeNom();
 
-echo "<h3> ACTION: afiche les noms origineaux des fichier du dosier image_Vrac exitent</h3>";
-
+echo "<h3> ACTION 1: Lire et aficger le contenue du doccier image_Vrac . <br> Afiche les noms origineaux des fichier du dosier image_Vrac exitent</h3>";
 
   foreach ($enciens_noms as $key => $encien_nom) {
 
@@ -22,10 +23,8 @@ echo "<h3> ACTION: afiche les noms origineaux des fichier du dosier image_Vrac e
 
   }
 
-
-echo "<h3> ACTION:Si il exite afiche les nouveux nom des fichier du dosier image_Vrac,
+echo "<h3> ACTION 2:Si il exite afiche les nouveux nom des fichier du dosier image_Vrac,
 les non on etait sendardiser pour déplasement dans le docier aproprier</h3>";
-
 
   foreach ($nouveuxNoms as $key => $nouveuNom)
   {
@@ -33,7 +32,7 @@ les non on etait sendardiser pour déplasement dans le docier aproprier</h3>";
   }
 
 
-
+echo "<h3> ACTION 3: Bouton permetent de deplacer les fichier  </h3>";
 
 if (isset($_POST["deplacer"])) {
 
@@ -45,7 +44,6 @@ if (isset($_POST["deplacer"])) {
 
   //$mesage ="Le fichier bien a etait deplaser";
 }
-
 
 ?>
 

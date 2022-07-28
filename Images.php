@@ -19,12 +19,12 @@ class Images
 
 
   //varible de depart
-  private $_depart = 'E:/wamp64/www/devoire_image/image_Vrac/';
+  private $_depart = 'E:/wamp64/www/devoire_image_V2/image_Vrac/';
 
   //varible de detination
-  private $_ariver_chat = 'E:/wamp64/www/devoire_image/image_chat/';
-  private $_ariver_montagne = 'E:/wamp64/www/devoire_image/image_montagne/';
-  private $_ariver_moto = 'E:/wamp64/www/devoire_image/image_moto/';
+  private $_ariver_chat = 'E:/wamp64/www/devoire_image_V2/image_chat/';
+  private $_ariver_montagne = 'E:/wamp64/www/devoire_image_V2/image_montagne/';
+  private $_ariver_moto = 'E:/wamp64/www/devoire_image_V2/image_moto/';
 
   public function __construct()
   {
@@ -48,7 +48,7 @@ class Images
     $ariver_montagne = $this->_ariver_montagne;//chemin destination doc image_montage
     $ariver_moto = $this->_ariver_moto;//chemin destination doc image_moto
 
-    if ($handel = opendir('E:\wamp64\www\devoire_image\image_Vrac'))
+    if ($handel = opendir('E:\wamp64\www\devoire_image_V2\image_Vrac'))
     {
       $n_chat=0;
       $n_montagne= 10;
@@ -167,7 +167,7 @@ class Images
 
   public function nomFichier()
   {
-    if ($handel = opendir('E:\wamp64\www\devoire_image\image_Vrac'))
+    if ($handel = opendir('E:\wamp64\www\devoire_image_V2\image_Vrac'))
     {
       while(false !== $entry = readdir($handel) )
       {
@@ -210,7 +210,7 @@ class Images
      $ariver_montagne = $this->_ariver_montagne;//chemin destination doc image_montage
      $ariver_moto = $this->_ariver_moto;//chemin destination doc image_moto
 
-     if ($handel = opendir('E:\wamp64\www\devoire_image\image_Vrac'))
+     if ($handel = opendir('E:\wamp64\www\devoire_image_V2\image_Vrac'))
      {
        $n_chat=0;
        $n_montagne= 10;
@@ -332,7 +332,7 @@ class Images
      }
 
      closedir($handel);
-     
+
    }
 
 
