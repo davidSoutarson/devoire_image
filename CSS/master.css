@@ -1,3 +1,5 @@
+
+
 h2{
   color: red;
 }
@@ -6,9 +8,14 @@ h3{
   color: green;
 }
 
+#bleux{
+  color: blue;
+}
+
 .champForm{
   width: 450px;
   border: solid 2px white ;
   padding: 10px;
   background : rgba(60, 60, 60, 0.2);
+  display:block;
 }

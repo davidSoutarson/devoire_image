@@ -76,7 +76,7 @@ class Images
           $nom_orig_net = strtolower($sup_simbole);
 
 
-          if ($nom_orig_net === 'chat_')
+          if ($nom_orig_net === 'chat_' || $nom_orig_net === 'chat' )
           {
             $num_seri = $n_chat+=1;
 
@@ -124,7 +124,7 @@ class Images
 
           }
 
-          if ($nom_orig_net === 'moto_') {
+          if ($nom_orig_net === 'moto_' || $nom_orig_net === 'moto') {
             // code...
             $num_seri = $n_moto+=1;
 
@@ -238,7 +238,7 @@ class Images
            $nom_orig_net = strtolower($sup_simbole);
 
 
-           if ($nom_orig_net === 'chat_')
+           if ($nom_orig_net === 'chat_'|| $nom_orig_net === 'chat')
            {
              $num_seri = $n_chat+=1;
 
